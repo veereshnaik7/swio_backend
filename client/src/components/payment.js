@@ -51,6 +51,9 @@ const Payment = () => {
     if (result.error) {
       console.log(result.error);
     }
+
+    setData(data.Amount="")
+    setData(data.Name="")
   };
   return (
     <>
