@@ -20,6 +20,10 @@ const Payment = () => {
   };
 
   const Paymentfunc = async (event) => {
+    if(data.Name==="" || data.Amount===""){
+      alert("enter both name and money ")
+    }
+
     event.preventDefault();
 
     const stripe = await loadStripe(
