@@ -1,11 +1,12 @@
 import React from 'react'
 import Header from './header'
+import { GoCheck } from "react-icons/go";
 
 const Success = () => {
   return (
-    <div >
+    <div id='outer'>
       <Header/>
-      <h1 style={{color:"black",marginTop:"5%"}}>success</h1>
+      <h2 style={{color:"#fff",marginTop:"10%"}}>success <GoCheck /> </h2>
     </div>
   )
 }

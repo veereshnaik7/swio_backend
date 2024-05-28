@@ -1,11 +1,12 @@
 import React from 'react'
 import Header from './header'
+import { GoX } from "react-icons/go";
 
 const Cancel = () => {
   return (
-    <div>
+    <div id='outer' >
       <Header/>
-      <h1 style={{color:"black",marginTop:"5%"}}>Failure</h1>
+      <h2 style={{color:"#fff",marginTop:"10%"}}>Payment failed <GoX /> </h2>
 
     </div>
   )
