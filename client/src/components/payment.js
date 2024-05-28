@@ -51,6 +51,9 @@ const Payment = () => {
     if (result.error) {
       console.log(result.error);
     }
+    if(data.Name==="" || data.Amount===""){
+      alert("enter both name and money ")
+    }
   };
   return (
     <>
