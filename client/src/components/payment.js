@@ -51,7 +51,6 @@ const Payment = () => {
     if (result.error) {
       console.log(result.error);
     }
-    
   };
   return (
     <>
