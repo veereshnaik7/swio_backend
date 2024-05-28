@@ -1,41 +1,19 @@
-import  React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
-import { useNavigate } from 'react-router-dom';
 
+import React from 'react'
+import { Link } from 'react-router-dom'
 
- function Header() {
-    const val=useNavigate();
-    const val1=useNavigate();
-    const Pay=()=>{
-        val('/')
-    }
-    const trn=()=>{
-        val1('/transaction')
-    }
+const header = () => {
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
-        <Toolbar>
-        <Typography variant="h6" component="div" >
-            Backend
-          </Typography>
-          
-            <Box sx={{ ml: 'auto' }}>
-            <Button color="inherit" onClick={Pay}>Payment</Button>
-            <Button color="inherit" onClick={trn}>Transaction</Button>
+    <div id='nav'>
+      <ul>
+        <li>
+          <Link to="/" className='nav-item'> payments</Link>
+          <Link to="/transaction" className='nav-item'> transactions</Link>
+        </li>
+      </ul>
 
-            </Box>
-          
-          
-        </Toolbar>
-      </AppBar>
-    </Box>
-  );
+    </div>
+  )
 }
 
-export default Header
+export default header

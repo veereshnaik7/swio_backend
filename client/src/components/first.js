@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Home from './home'
+
 import Payment from './payment'
 import Transaction from '../tran'
 import Success from './success'
@@ -12,7 +12,7 @@ const First = () => {
     <div>
       <BrowserRouter>
       <Routes>
-        <Route path='/home' element={<Home/>}/>
+        
         <Route path='/' element={<Payment/>}/>
         <Route path='/transaction' element={<Transaction/>}/>
         <Route path='/success' element={<Success/>}/>
