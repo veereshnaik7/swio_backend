@@ -4,7 +4,7 @@ import { GoX } from "react-icons/go";
 
 const Cancel = () => {
   return (
-    <div id='outer' >
+    <div  >
       <Header/>
       <h2 style={{color:"#fff",marginTop:"10%"}}>Payment failed <GoX /> </h2>
 
